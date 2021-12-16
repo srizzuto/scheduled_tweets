@@ -19,10 +19,10 @@ class TweetsController < ApplicationController
       render :new
     end
   end
-
+  
   def edit
   end
-
+  
   def update
     if @tweet.update(tweet_params)
       redirect_to tweets_path, notice: "Tweet was updated successfully"
